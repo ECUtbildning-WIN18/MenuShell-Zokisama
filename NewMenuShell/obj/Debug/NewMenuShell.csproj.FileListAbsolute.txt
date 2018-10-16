@@ -1,0 +1,6 @@
+C:\ECUtbildning\NewMenuShell\NewMenuShell\obj\Debug\NewMenuShell.csprojAssemblyReference.cache
+C:\ECUtbildning\NewMenuShell\NewMenuShell\obj\Debug\NewMenuShell.csproj.CoreCompileInputs.cache
+C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\NewMenuShell.exe
+C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\NewMenuShell.pdb
+C:\ECUtbildning\NewMenuShell\NewMenuShell\obj\Debug\NewMenuShell.exe
+C:\ECUtbildning\NewMenuShell\NewMenuShell\obj\Debug\NewMenuShell.pdb
