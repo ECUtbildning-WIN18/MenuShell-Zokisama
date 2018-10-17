@@ -8,8 +8,7 @@ namespace NewMenuShell.Services.Admin
     {
         public static void SaveUser(User user)
         {
-            var doc = XDocument.Load("Users.xml");
-            Console.WriteLine(doc);
+            var doc = XDocument.Load("Users.xml");            
             var docRoot = doc.Root;
             
             var element = new XElement("User", 
@@ -18,7 +17,7 @@ namespace NewMenuShell.Services.Admin
                 new XElement("Role", user.Role.ToString()));
 
             docRoot.Add(element);
-            Console.WriteLine(docRoot);
+            
             doc.Save("Users.xml");
         }
     }
