@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\ECUtbildning\NewMenuShell" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="NewMenuShell" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Domain" t="Include">
@@ -29,6 +30,7 @@
           </e>
           <e p="CompareUsername.cs" t="Include" />
           <e p="LoadUsers.cs" t="Include" />
+          <e p="SearchUser.cs" t="Include" />
           <e p="UserData.cs" t="Include" />
           <e p="Validation.cs" t="Include" />
         </e>

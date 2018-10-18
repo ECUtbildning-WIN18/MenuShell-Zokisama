@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Xml.Linq;
 using NewMenuShell.Domain;
 
@@ -8,7 +9,16 @@ namespace NewMenuShell.Services.Admin
     {
         public static void SaveUser(User user)
         {
-            var doc = XDocument.Load("Users.xml");            
+            XDocument doc = null;
+            if (File.Exists("Users.xml"))
+            {
+                doc = XDocument.Load("Users.xml");
+            }
+            else
+            {
+                doc = new XDocument();
+                doc.Add(new XElement("UserList"));
+            }
             var docRoot = doc.Root;
             
             var element = new XElement("User", 

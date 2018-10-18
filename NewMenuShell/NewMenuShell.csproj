@@ -51,6 +51,7 @@
     <Compile Include="Services\Admin\SaveUser.cs" />
     <Compile Include="Services\CompareUsername.cs" />
     <Compile Include="Services\LoadUsers.cs" />
+    <Compile Include="Services\SearchUser.cs" />
     <Compile Include="Services\UserData.cs" />
     <Compile Include="Services\Validation.cs" />
     <Compile Include="Views\AddUserView.cs" />

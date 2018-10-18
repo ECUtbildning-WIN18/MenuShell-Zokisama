@@ -12,11 +12,11 @@ namespace NewMenuShell
         {
             //var loadUsers = new LoadUsers();
             //var saveUser = new SaveUsers();
-            var loginView = new LoginView();
-
             User validatedUser;
             do
             {
+                var loginView = new LoginView();
+                
                 loginView.Display();
                 var user = new UserData().CollectUserInput();
             

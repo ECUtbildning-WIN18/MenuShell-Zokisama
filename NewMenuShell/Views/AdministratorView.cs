@@ -16,6 +16,7 @@ namespace NewMenuShell.Views
                               "   1. Add User                 \n" +
                               "   2. Remove User              \n" +
                               "   3. List Users               \n" +
+                              "   3. Search Users             \n" +
                               "                               \n" +
                               "===============================");
         }
