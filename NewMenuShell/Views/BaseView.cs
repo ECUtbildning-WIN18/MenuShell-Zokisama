@@ -4,13 +4,14 @@ namespace NewMenuShell.Views
 {
     public abstract class BaseView
     {
-        private string Title { get; }
         protected BaseView(string title)
         {
             Console.Clear();
             Title = title;
             Console.Title = Title;
         }
+
+        private string Title { get; }
         public abstract void Display();
     }
 }

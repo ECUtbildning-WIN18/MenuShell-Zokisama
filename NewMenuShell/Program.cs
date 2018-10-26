@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Xml.Linq;
 using NewMenuShell.Domain;
 using NewMenuShell.Services;
 using NewMenuShell.Views;
@@ -16,10 +15,10 @@ namespace NewMenuShell
             do
             {
                 var loginView = new LoginView();
-                
+
                 loginView.Display();
                 var user = new UserData().CollectUserInput();
-            
+
                 validatedUser = new Validation().Authenticate(user);
 
                 if (validatedUser != null)
@@ -27,6 +26,7 @@ namespace NewMenuShell
                     Console.WriteLine("Login Success");
                     break;
                 }
+
                 StandardMessages.LoginFail();
             } while (true);
 
@@ -34,7 +34,6 @@ namespace NewMenuShell
             {
                 var adminMainView = new AdminMainView();
                 adminMainView.Display();
-                
             }
             else if (validatedUser.Role == Role.User)
             {

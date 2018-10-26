@@ -1,4 +1,3 @@
-using System.IO;
 using NewMenuShell.Domain;
 
 namespace NewMenuShell.Services
@@ -9,7 +8,7 @@ namespace NewMenuShell.Services
         {
             var listOfUsers = new LoadUsers();
             var users = listOfUsers.LoadUserList();
-            
+
             var validUser = users.Find(x => x.Username == username);
             return validUser;
         }

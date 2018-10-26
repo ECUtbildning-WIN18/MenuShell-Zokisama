@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
-using System.Xml;
 using System.Xml.Linq;
 using NewMenuShell.Domain;
 using NewMenuShell.Services.Admin;
@@ -14,7 +13,7 @@ namespace NewMenuShell.Services
         public List<User> LoadUserList()
         {
             XDocument doc;
-            
+
             if (File.Exists("Users.xml"))
             {
                 doc = XDocument.Load("Users.xml");
@@ -30,8 +29,8 @@ namespace NewMenuShell.Services
                 doc = XDocument.Load("Users.xml");
                 Thread.Sleep(2000);
             }
+
             var userList = new List<User>();
-            var successLoad = false;
             var root = doc.Root;
 
 
@@ -41,13 +40,14 @@ namespace NewMenuShell.Services
                     var username = element.Element("Username")?.Value;
                     var password = element.Element("Password")?.Value;
                     var role = element.Element("Role")?.Value;
-                    
+
                     var access = (Role) Enum.Parse(typeof(Role), role);
-                    
+
                     var user = new User(username, password, access);
-                    
+
                     userList.Add(user);
                 }
+
             return userList;
         }
     }

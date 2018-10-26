@@ -1,5 +1,4 @@
 using System;
-using System.Runtime.InteropServices;
 
 namespace NewMenuShell.Services.Admin
 {
@@ -10,10 +9,7 @@ namespace NewMenuShell.Services.Admin
             var loadUsers = new LoadUsers();
             var listOfUsers = loadUsers.LoadUserList();
 
-            foreach (var user in listOfUsers)
-            {
-                Console.WriteLine($"   {user}");
-            }
+            foreach (var user in listOfUsers) Console.WriteLine($"   {user}");
         }
     }
 }

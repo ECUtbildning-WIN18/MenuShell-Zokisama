@@ -11,7 +11,7 @@ namespace NewMenuShell.Services
             var username = Console.ReadLine();
             Console.SetCursorPosition(13, 3);
             var password = Console.ReadLine();
-            
+
             return new User(username, password, Role.User);
         }
 

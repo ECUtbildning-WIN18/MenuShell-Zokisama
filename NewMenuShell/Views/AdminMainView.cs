@@ -14,7 +14,6 @@ namespace NewMenuShell.Views
         public override void Display()
         {
             var adminView = new AdministratorView();
-            var saveUser = new SaveUsers();
 
             do
             {
@@ -53,19 +52,24 @@ namespace NewMenuShell.Views
                 }
                 else if (ckey.Key == ConsoleKey.D4)
                 {
+                    var searchUserView = new SearchUserView();
+                    searchUserView.Display();
+                    var userInput = UserData.UserToRemove();
+                    SearchUser.SearchInUserList(userInput);
+                    Console.ReadKey();
+                }
+                else if (ckey.Key == ConsoleKey.D5)
+                {
                     Console.WriteLine("Are you sure that you want to loggout?");
                     Console.WriteLine("    (Y)es / (N)o");
                     ckey = Console.ReadKey();
-                    if (ckey.Key == ConsoleKey.Y)
-                    {
-                        return;
-                    }
+                    if (ckey.Key == ConsoleKey.Y) return;
                 }
                 else
                 {
                     StandardMessages.RedMessage("Invalid input");
                 }
-            } while (true) ;
+            } while (true);
         }
     }
 }

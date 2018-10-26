@@ -11,9 +11,8 @@ namespace NewMenuShell.Services
             var docRoot = doc.Root;
 
             foreach (var element in docRoot.Elements())
-            {
-                if (user.Username == element.Element("Username")?.Value) element.Element("Username").Parent.Remove();
-            }
+                if (user.Username == element.Element("Username")?.Value)
+                    element.Element("Username").Parent.Remove();
             doc.Save("Users.xml");
         }
     }

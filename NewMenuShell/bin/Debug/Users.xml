@@ -5,4 +5,19 @@
     <Password>password</Password>
     <Role>Administrator</Role>
   </User>
+  <User>
+    <Username>kalle</Username>
+    <Password>moster</Password>
+    <Role>User</Role>
+  </User>
+  <User>
+    <Username>Flexi</Username>
+    <Password>kaxxa</Password>
+    <Role>User</Role>
+  </User>
+  <User>
+    <Username>kasper</Username>
+    <Password>mulle</Password>
+    <Role>User</Role>
+  </User>
 </UserList>

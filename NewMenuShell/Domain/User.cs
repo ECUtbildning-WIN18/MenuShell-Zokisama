@@ -1,14 +1,9 @@
-using System.Security.Principal;
 using NewMenuShell.Services;
 
 namespace NewMenuShell.Domain
 {
     public class User
     {
-        public string Username { get; }
-        public string Password { get; }
-        public Role Role { get; }
-
         public User(string username, string password, Role role)
         {
             Username = username;
@@ -21,6 +16,10 @@ namespace NewMenuShell.Domain
             Username = username;
             Password = password;
         }
+
+        public string Username { get; }
+        public string Password { get; }
+        public Role Role { get; }
 
         public override string ToString()
         {

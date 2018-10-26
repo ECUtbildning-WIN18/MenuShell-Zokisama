@@ -9,7 +9,9 @@ namespace NewMenuShell.Services
         public User Authenticate(User user)
         {
             var userList = new LoadUsers().LoadUserList();
-            var validatedUser = userList.Find((x => string.Equals(x.Username, user.Username, StringComparison.CurrentCultureIgnoreCase) && x.Password == user.Password));
+            var validatedUser = userList.Find(x =>
+                string.Equals(x.Username, user.Username, StringComparison.CurrentCultureIgnoreCase) &&
+                x.Password == user.Password);
 
             return validatedUser;
         }

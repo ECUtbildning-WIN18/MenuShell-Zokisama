@@ -60,6 +60,7 @@
     <Compile Include="Views\BaseView.cs" />
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Views\RemoveUserView.cs" />
+    <Compile Include="Views\SearchUserView.cs" />
     <Compile Include="Views\UserView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
