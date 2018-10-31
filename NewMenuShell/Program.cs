@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using NewMenuShell.DB;
+﻿using NewMenuShell.DB;
 using NewMenuShell.Domain;
 using NewMenuShell.Enums;
 using NewMenuShell.Services;
@@ -8,12 +6,13 @@ using NewMenuShell.Views;
 
 namespace NewMenuShell
 {
-    internal class Program
+    class Program
     {
         public static void Main(string[] args)
         {
-            //var loadUsers = new LoadUsers();
-            //var saveUser = new SaveUsers();
+            var initialData = new CreateDBTable();
+            initialData.InitialData();
+                
             User validatedUser;
             do
             {

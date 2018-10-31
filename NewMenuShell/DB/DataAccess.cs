@@ -1,10 +1,8 @@
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using NewMenuShell.Domain;
 using NewMenuShell.Enums;
-using NewMenuShell.Services;
 
 namespace NewMenuShell.DB
 {
@@ -15,9 +13,10 @@ namespace NewMenuShell.DB
             using (var connection = new SqlConnection(Helper.CnnVal("UserDB")))
             {
                 connection.Open();
-                var queryString = $"INSERT INTO UserTbl VALUES ('{user.Username}', '{user.Password}', '{RoleCheckToString(user)}')";
+                var queryString = $"INSERT INTO [User] VALUES ('{user.Username}', '{user.Password}', '{RoleCheckToString(user)}')";
                 var command = new SqlCommand(queryString, connection);
                 command.ExecuteNonQuery();
+                connection.Close();
             }
         }
 
@@ -26,9 +25,10 @@ namespace NewMenuShell.DB
             using (var connection = new SqlConnection(Helper.CnnVal("UserDB")))
             {
                 connection.Open();
-                var queryString = $"DELETE FROM UserTbl WHERE Username = ('{user.Username}')";
+                var queryString = $"DELETE FROM [User] WHERE Username = ('{user.Username}')";
                 var command = new SqlCommand(queryString, connection);
                 command.ExecuteNonQuery();
+                connection.Close();
             }
         }
         
@@ -39,7 +39,7 @@ namespace NewMenuShell.DB
             {
                 connection.Open();
                 
-                var queryString = "SELECT * FROM UserTbl"; //WHERE Username = '{username}'
+                var queryString = "SELECT * FROM [User]"; //WHERE Username = '{username}'
                 var command = new SqlCommand(queryString, connection);
                 var reader = command.ExecuteReader();
                 if (reader.HasRows)
@@ -49,6 +49,7 @@ namespace NewMenuShell.DB
                         users.Add(new User(reader["Username"].ToString(), reader["Password"].ToString(), RoleCheckToEnum(reader)));
                     }
                 }
+                connection.Close();
             }
             return users;
         }

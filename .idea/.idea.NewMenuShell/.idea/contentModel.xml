@@ -7,6 +7,7 @@
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="db" t="Include">
+          <e p="CreateDBTable.cs" t="Include" />
           <e p="DataAccess.cs" t="Include" />
           <e p="Helper.cs" t="Include" />
         </e>
