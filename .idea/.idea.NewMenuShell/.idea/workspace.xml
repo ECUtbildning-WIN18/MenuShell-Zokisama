@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03bc93aa-ab65-4f77-9334-eae3b207da48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.NewMenuShell/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewMenuShell/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewMenuShell/DB/DataAccess.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewMenuShell/DB/Helper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NewMenuShell/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewMenuShell/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NewMenuShell/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NewMenuShell/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Domain/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Domain/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Enums/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Enums/Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/NewMenuShell.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/NewMenuShell.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/Admin/DeleteUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/Admin/ListUsers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Services/Admin/ListUsers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/Admin/SaveUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/CompareUsername.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Services/CompareUsername.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/LoadUsers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/SearchUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Services/SearchUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/UserData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Services/UserData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Services/Validation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Services/Validation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Views/AdminMainView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Views/AdminMainView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/Views/AdministratorView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/Views/AdministratorView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/bin/Debug/NewMenuShell.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/bin/Debug/NewMenuShell.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/bin/Debug/NewMenuShell.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/bin/Debug/NewMenuShell.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NewMenuShell/obj/Debug/NewMenuShell.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="03bc93aa-ab65-4f77-9334-eae3b207da48" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +26,7 @@
     <session id="562556451">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.5" value="6" />
@@ -101,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NewMenuShell/DB/DataAccess.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="-92">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <marker date="1540996068733" expanded="false" signature="6:177" ph="..." />
                 <marker date="1540996068733" expanded="true" signature="204:2272" ph="{...}" />
@@ -336,12 +308,12 @@
       <workItem from="1540888224579" duration="11452000" />
       <workItem from="1540908255578" duration="438000" />
       <workItem from="1540909018308" duration="20000" />
-      <workItem from="1540980020647" duration="10514000" />
+      <workItem from="1540980020647" duration="11555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69656000" />
+    <option name="totallyTimeSpent" value="70697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,7 +333,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.26718405" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26718405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -736,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NewMenuShell/DB/DataAccess.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="-92">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
             <marker date="1540996068733" expanded="false" signature="6:177" ph="..." />
             <marker date="1540996068733" expanded="true" signature="204:2272" ph="{...}" />
