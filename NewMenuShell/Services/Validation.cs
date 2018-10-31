@@ -1,4 +1,5 @@
 using System;
+using NewMenuShell.DB;
 using NewMenuShell.Domain;
 using NewMenuShell.Interfaces;
 
@@ -8,8 +9,9 @@ namespace NewMenuShell.Services
     {
         public User Authenticate(User user)
         {
-            var userList = new LoadUsers().LoadUserList();
-            var validatedUser = userList.Find(x =>
+            var users = new DataAccess().GetUsers();
+
+            var validatedUser = users.Find(x =>
                 string.Equals(x.Username, user.Username, StringComparison.CurrentCultureIgnoreCase) &&
                 x.Password == user.Password);
 

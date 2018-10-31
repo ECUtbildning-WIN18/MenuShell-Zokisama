@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using NewMenuShell.DB;
 using NewMenuShell.Domain;
 
 namespace NewMenuShell.Services
@@ -8,10 +9,9 @@ namespace NewMenuShell.Services
     {
         public static void SearchInUserList(string userToSearch)
         {
-            var loadUsers = new LoadUsers();
-            var listOfUsers = loadUsers.LoadUserList();
+            var users = new DataAccess().GetUsers();
 
-            var selectedUser = listOfUsers.Where(x => x.Username.Contains(userToSearch));
+            var selectedUser = users.Where(x => x.Username.ToLower().Contains(userToSearch.ToLower()));
 
             Console.WriteLine($"These users contains {userToSearch}");
             foreach (var user in selectedUser)

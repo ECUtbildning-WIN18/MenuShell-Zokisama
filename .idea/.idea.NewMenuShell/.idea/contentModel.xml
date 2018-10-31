@@ -4,7 +4,12 @@
     <e p="C:\ECUtbildning\NewMenuShell" t="IncludeFlat">
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="NewMenuShell" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="db" t="Include">
+          <e p="DataAccess.cs" t="Include" />
+          <e p="Helper.cs" t="Include" />
+        </e>
         <e p="Domain" t="Include">
           <e p="StandardMessages.cs" t="Include" />
           <e p="User.cs" t="Include" />
@@ -24,12 +29,9 @@
         </e>
         <e p="Services" t="Include">
           <e p="Admin" t="Include">
-            <e p="DeleteUser.cs" t="Include" />
             <e p="ListUsers.cs" t="Include" />
-            <e p="SaveUser.cs" t="Include" />
           </e>
           <e p="CompareUsername.cs" t="Include" />
-          <e p="LoadUsers.cs" t="Include" />
           <e p="SearchUser.cs" t="Include" />
           <e p="UserData.cs" t="Include" />
           <e p="Validation.cs" t="Include" />

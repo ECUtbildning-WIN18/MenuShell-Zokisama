@@ -1,5 +1,6 @@
 using System;
 using NewMenuShell.Domain;
+using NewMenuShell.Enums;
 
 namespace NewMenuShell.Services
 {

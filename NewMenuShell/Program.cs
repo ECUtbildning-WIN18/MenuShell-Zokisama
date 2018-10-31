@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Runtime.InteropServices;
+using NewMenuShell.DB;
 using NewMenuShell.Domain;
+using NewMenuShell.Enums;
 using NewMenuShell.Services;
 using NewMenuShell.Views;
 
@@ -23,10 +26,9 @@ namespace NewMenuShell
 
                 if (validatedUser != null)
                 {
-                    Console.WriteLine("Login Success");
+                    // Console.WriteLine("Login Success");
                     break;
                 }
-
                 StandardMessages.LoginFail();
             } while (true);
 

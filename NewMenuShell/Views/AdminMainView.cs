@@ -1,5 +1,7 @@
 using System;
+using NewMenuShell.DB;
 using NewMenuShell.Domain;
+using NewMenuShell.Enums;
 using NewMenuShell.Services;
 using NewMenuShell.Services.Admin;
 
@@ -14,6 +16,7 @@ namespace NewMenuShell.Views
         public override void Display()
         {
             var adminView = new AdministratorView();
+            var dataAccess = new DataAccess();
 
             do
             {
@@ -24,7 +27,7 @@ namespace NewMenuShell.Views
                     var addUserView = new AddUserView();
                     addUserView.Display();
                     var userToSave = new UserData().CollectUserInput();
-                    SaveUsers.SaveUser(userToSave);
+                    dataAccess.AddUserToDB(userToSave);
                 }
                 else if (ckey.Key == ConsoleKey.D2)
                 {
@@ -35,8 +38,7 @@ namespace NewMenuShell.Views
                     var toBeRemovedUser = CompareUsername.GetUser(userInput);
                     if (toBeRemovedUser != null && toBeRemovedUser.Role != Role.Administrator)
                     {
-                        var deleteUser = new DeleteUser();
-                        deleteUser.RemoveUser(toBeRemovedUser);
+                        dataAccess.RemoveUserFromDB(toBeRemovedUser);
                     }
                     else
                     {

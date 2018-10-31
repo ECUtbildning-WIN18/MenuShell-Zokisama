@@ -1,4 +1,4 @@
-namespace NewMenuShell.Services
+namespace NewMenuShell.Enums
 {
     public enum Role
     {
