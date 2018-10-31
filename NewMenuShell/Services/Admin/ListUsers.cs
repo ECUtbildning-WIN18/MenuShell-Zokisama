@@ -1,19 +1,16 @@
 using System;
-using System.Runtime.InteropServices;
+using NewMenuShell.DB;
+using NewMenuShell.Domain;
 
 namespace NewMenuShell.Services.Admin
 {
-    public class ListUsers
+    public static class ListUsers
     {
         public static void PrintUsers()
         {
-            var loadUsers = new LoadUsers();
-            var listOfUsers = loadUsers.LoadUserList();
+            var users = new DataAccess().GetUsers();
 
-            foreach (var user in listOfUsers)
-            {
-                Console.WriteLine($"   {user}");
-            }
+            foreach (var user in users) Console.WriteLine($"{user.UserInfo}");
         }
     }
 }

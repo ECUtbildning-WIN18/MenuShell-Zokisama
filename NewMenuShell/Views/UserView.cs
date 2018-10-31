@@ -11,11 +11,11 @@ namespace NewMenuShell.Views
         public override void Display()
         {
             Console.WriteLine("==========  User View ===========\n" +
-                              "                                \n" +
-                              "   Nothing fun here             \n" +
-                              "   Maybe soon!!                 \n" +
-                              "                                \n" +
-                              "================================");
+                              "                                 \n" +
+                              "   Nothing fun here              \n" +
+                              "   Maybe soon!!                  \n" +
+                              "                                 \n" +
+                              "=================================");
         }
     }
 }

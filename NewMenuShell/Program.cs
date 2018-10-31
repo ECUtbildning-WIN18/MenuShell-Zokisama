@@ -1,30 +1,31 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using NewMenuShell.DB;
 using NewMenuShell.Domain;
+using NewMenuShell.Enums;
 using NewMenuShell.Services;
 using NewMenuShell.Views;
 
 namespace NewMenuShell
 {
-    internal class Program
+    class Program
     {
         public static void Main(string[] args)
         {
-            //var loadUsers = new LoadUsers();
-            //var saveUser = new SaveUsers();
-            var loginView = new LoginView();
-
+            var initialData = new CreateDBTable();
+            initialData.InitialData();
+                
             User validatedUser;
             do
             {
+                var loginView = new LoginView();
+
                 loginView.Display();
                 var user = new UserData().CollectUserInput();
-            
+
                 validatedUser = new Validation().Authenticate(user);
 
                 if (validatedUser != null)
                 {
-                    Console.WriteLine("Login Success");
+                    // Console.WriteLine("Login Success");
                     break;
                 }
                 StandardMessages.LoginFail();
@@ -34,7 +35,6 @@ namespace NewMenuShell
             {
                 var adminMainView = new AdminMainView();
                 adminMainView.Display();
-                
             }
             else if (validatedUser.Role == Role.User)
             {

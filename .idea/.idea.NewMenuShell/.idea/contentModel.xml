@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\ECUtbildning\NewMenuShell" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="NewMenuShell" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="db" t="Include">
+          <e p="CreateDBTable.cs" t="Include" />
+          <e p="DataAccess.cs" t="Include" />
+          <e p="Helper.cs" t="Include" />
+        </e>
         <e p="Domain" t="Include">
           <e p="StandardMessages.cs" t="Include" />
           <e p="User.cs" t="Include" />
@@ -23,12 +30,10 @@
         </e>
         <e p="Services" t="Include">
           <e p="Admin" t="Include">
-            <e p="DeleteUser.cs" t="Include" />
             <e p="ListUsers.cs" t="Include" />
-            <e p="SaveUser.cs" t="Include" />
           </e>
           <e p="CompareUsername.cs" t="Include" />
-          <e p="LoadUsers.cs" t="Include" />
+          <e p="SearchUser.cs" t="Include" />
           <e p="UserData.cs" t="Include" />
           <e p="Validation.cs" t="Include" />
         </e>
@@ -39,12 +44,14 @@
           <e p="BaseView.cs" t="Include" />
           <e p="LoginView.cs" t="Include" />
           <e p="RemoveUserView.cs" t="Include" />
+          <e p="SearchUserView.cs" t="Include" />
           <e p="UserView.cs" t="Include" />
         </e>
       </e>
       <e p="NewMenuShell.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\jocke\.Rider2018.2\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\jocke\.Rider2018.2\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\jocke\.Rider2018.2\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\jocke\.Rider2018.2\system\extResources" t="IncludeRecursive" />

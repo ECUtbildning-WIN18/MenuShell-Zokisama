@@ -1,18 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UserList>
   <User>
-    <Username>Zoki</Username>
-    <Password>kaka</Password>
+    <Username>Admin</Username>
+    <Password>password</Password>
     <Role>Administrator</Role>
   </User>
   <User>
-    <Username>Kalle</Username>
-    <Password>kula</Password>
+    <Username>kalle</Username>
+    <Password>moster</Password>
     <Role>User</Role>
   </User>
   <User>
-    <Username>test2</Username>
-    <Password>tester</Password>
+    <Username>Flexi</Username>
+    <Password>kaxxa</Password>
+    <Role>User</Role>
+  </User>
+  <User>
+    <Username>kasper</Username>
+    <Password>mulle</Password>
     <Role>User</Role>
   </User>
 </UserList>

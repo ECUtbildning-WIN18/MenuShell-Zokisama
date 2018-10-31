@@ -1,4 +1,4 @@
-using System.Security.Principal;
+using NewMenuShell.Enums;
 using NewMenuShell.Services;
 
 namespace NewMenuShell.Domain
@@ -8,7 +8,7 @@ namespace NewMenuShell.Domain
         public string Username { get; }
         public string Password { get; }
         public Role Role { get; }
-
+        
         public User(string username, string password, Role role)
         {
             Username = username;
@@ -16,11 +16,7 @@ namespace NewMenuShell.Domain
             Role = role;
         }
 
-        public User(string username, string password)
-        {
-            Username = username;
-            Password = password;
-        }
+        public string UserInfo => $"{Role.ToString()}: {Username}";
 
         public override string ToString()
         {

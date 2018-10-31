@@ -1,5 +1,4 @@
 using System;
-using System.Threading;
 
 namespace NewMenuShell.Domain
 {
@@ -19,7 +18,7 @@ namespace NewMenuShell.Domain
             Console.ReadKey();
             Console.Clear();
         }
-        
+
         public static void RedMessage(string message)
         {
             Console.Clear();
