@@ -1,3 +1,4 @@
+/****************
 using System.Configuration;
 
 namespace NewMenuShell.DB
@@ -10,3 +11,5 @@ namespace NewMenuShell.DB
         }
     }
 }
+*****************/
+

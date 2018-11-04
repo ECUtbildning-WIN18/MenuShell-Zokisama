@@ -8,7 +8,7 @@ namespace NewMenuShell.Services
         public static User GetUser(string username)
         {
             var users = new DataAccess().GetUsers();
-            
+
             var validUser = users.Find(x => x.Username == username);
             return validUser;
         }

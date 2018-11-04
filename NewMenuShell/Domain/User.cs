@@ -1,20 +1,24 @@
 using NewMenuShell.Enums;
-using NewMenuShell.Services;
 
 namespace NewMenuShell.Domain
 {
     public class User
     {
-        public string Username { get; }
-        public string Password { get; }
-        public Role Role { get; }
-        
+        public User()
+        {
+        }
+
         public User(string username, string password, Role role)
         {
             Username = username;
             Password = password;
             Role = role;
         }
+
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public Role Role { get; set; }
 
         public string UserInfo => $"{Role.ToString()}: {Username}";
 

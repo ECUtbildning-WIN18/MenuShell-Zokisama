@@ -6,13 +6,12 @@ using NewMenuShell.Views;
 
 namespace NewMenuShell
 {
-    class Program
+    internal class Program
     {
         public static void Main(string[] args)
         {
-            var initialData = new CreateDBTable();
-            initialData.InitialData();
-                
+            DummyData.InitialData();
+
             User validatedUser;
             do
             {
@@ -23,11 +22,7 @@ namespace NewMenuShell
 
                 validatedUser = new Validation().Authenticate(user);
 
-                if (validatedUser != null)
-                {
-                    // Console.WriteLine("Login Success");
-                    break;
-                }
+                if (validatedUser != null) break;
                 StandardMessages.LoginFail();
             } while (true);
 

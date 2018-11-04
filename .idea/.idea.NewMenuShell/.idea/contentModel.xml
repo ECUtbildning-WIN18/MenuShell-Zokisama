@@ -7,9 +7,10 @@
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="db" t="Include">
-          <e p="CreateDBTable.cs" t="Include" />
           <e p="DataAccess.cs" t="Include" />
+          <e p="DummyData.cs" t="Include" />
           <e p="Helper.cs" t="Include" />
+          <e p="MenuShellDbContext.cs" t="Include" />
         </e>
         <e p="Domain" t="Include">
           <e p="StandardMessages.cs" t="Include" />
@@ -24,6 +25,7 @@
         </e>
         <e p="NewMenuShell.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />

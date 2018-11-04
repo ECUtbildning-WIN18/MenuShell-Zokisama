@@ -37,13 +37,9 @@ namespace NewMenuShell.Views
                     var userInput = UserData.UserToRemove();
                     var toBeRemovedUser = CompareUsername.GetUser(userInput);
                     if (toBeRemovedUser != null && toBeRemovedUser.Role != Role.Administrator)
-                    {
                         dataAccess.RemoveUserFromDB(toBeRemovedUser);
-                    }
                     else
-                    {
                         StandardMessages.RedMessage("User does not exist \n or User can't be deleted.");
-                    }
                 }
                 else if (ckey.Key == ConsoleKey.D3)
                 {

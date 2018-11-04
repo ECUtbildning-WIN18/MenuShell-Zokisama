@@ -5,3 +5,8 @@ C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\NewMenuShell.pdb
 C:\ECUtbildning\NewMenuShell\NewMenuShell\obj\Debug\NewMenuShell.exe
 C:\ECUtbildning\NewMenuShell\NewMenuShell\obj\Debug\NewMenuShell.pdb
 C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\NewMenuShell.exe.config
+C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\EntityFramework.dll
+C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\EntityFramework.SqlServer.dll
+C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\EntityFramework.xml
+C:\ECUtbildning\NewMenuShell\NewMenuShell\bin\Debug\EntityFramework.SqlServer.xml
+C:\ECUtbildning\NewMenuShell\NewMenuShell\obj\Debug\NewMenuShell.csproj.CopyComplete
